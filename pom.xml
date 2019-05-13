@@ -35,9 +35,9 @@
          <groupId>nl.hu.sie.bep</groupId>
 		 <artifactId>friendspammer-helper</artifactId>
          <version>1.0-SNAPSHOT</version>
-         <!--<scope>system</scope>
+         <scope>system</scope>
          <systemPath>${project.basedir}/friendspammer-helper-1.0-SNAPSHOT.jar</systemPath>
-        -->
+        
       </dependency>
   
     <dependency>
