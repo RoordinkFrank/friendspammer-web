@@ -7,7 +7,39 @@
   <version>1.0-SNAPSHOT</version>
   <name>friendspammer-web Maven Webapp</name>
   <url>http://maven.apache.org</url>
+  
+  	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.0</version>
+				<configuration>
+					<release>11</release>
+				</configuration>
+			</plugin>
+		</plugins>
+		 <finalName>friendspammer-web</finalName>
+	</build>
+  
+  
   <dependencies>
+  <!-- https://mvnrepository.com/artifact/org.mongodb/mongo-java-driver -->
+		<dependency>
+			<groupId>org.mongodb</groupId>
+			<artifactId>mongo-java-driver</artifactId>
+			<version>3.10.2</version>
+		</dependency>
+  
+     <dependency>
+         <groupId>nl.hu.sie.bep</groupId>
+		 <artifactId>friendspammer-helper</artifactId>
+         <version>1.0-SNAPSHOT</version>
+         <!--<scope>system</scope>
+         <systemPath>${project.basedir}/friendspammer-helper-1.0-SNAPSHOT.jar</systemPath>
+        -->
+      </dependency>
+  
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
@@ -15,7 +47,5 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-  <build>
-    <finalName>friendspammer-web</finalName>
-  </build>
+
 </project>
